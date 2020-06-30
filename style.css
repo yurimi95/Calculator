@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700');
+
+body {
+	font-family: "Source Sans Pro", sans-serif;
+	background: #fbfbfb;
+	text-align: center;
+}
+
+.calc{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0;
+    font-size: 48px;
+	font-weight: 200;
+	width: 480px;
+	margin: 0 auto;
+	box-shadow: 0 0 10px 0 rgba(125, 125, 125, 0.5);
+    border: 1px solid #535052;
+}
+
+
+.display {
+    grid-column: 1 / 4;
+    text-align: right;
+    padding-right: 40px;
+    font-size: 80px;
+    padding-top: 12px;
+    background: #535052;
+    color: #fff;
+    border: 1px solid #535052;
+}
+
+.clear{
+    background-color: #f5923e;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #535052;
+}
+
+.nums {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    background-color: #7C7A7B;
+    color:white;
+    
+}
+
+.nums>div{
+    padding: 10px;
+    border: 1px solid #535052;
+}
+
+.num-0 {
+    grid-column: 1 / 2;
+}
+
+.ops{
+    background-color: #f5923e;
+    color:#fff;
+    
+}
+
+.ops>div{
+    padding: 12px 0px;
+    border: 1px solid #535052;
+    display: flex;
+    justify-content: center;
+}
