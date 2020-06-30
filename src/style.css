@@ -3,7 +3,9 @@
 body {
 	font-family: "Source Sans Pro", sans-serif;
 	background: #fbfbfb;
-	text-align: center;
+    text-align: center;
+    image-rendering: auto;
+    background-image: url("./bg2.jpg");
 }
 
 .calc{
@@ -13,7 +15,8 @@ body {
     font-size: 48px;
 	font-weight: 200;
 	width: 480px;
-	margin: 0 auto;
+    margin: 0 auto;
+    margin-top: 100px;
 	box-shadow: 0 0 10px 0 rgba(125, 125, 125, 0.5);
     border: 1px solid #535052;
 }
