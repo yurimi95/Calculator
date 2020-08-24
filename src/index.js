@@ -1,16 +1,15 @@
-
 const display = document.querySelector(".display"),
   equalButton = document.querySelector(".equals"),
   numBtnArray = document.querySelectorAll("[data-number]"),
-  operationBtn = document.querySelectorAll("[data-operation"),
+  operationBtn = document.querySelectorAll("[data-operation]"),
   allClearBtn = document.querySelector(".clear");
 
 let displayVal = "";
 let firstVal = "";
 let operator = "";
 
-numBtnArray.forEach(numBtn => {
-  numBtn.addEventListener("click", event => {
+numBtnArray.forEach((numBtn) => {
+  numBtn.addEventListener("click", (event) => {
     if (displayVal === "" || displayVal === "0") {
       displayVal = event.target.dataset.number;
       display.innerHTML = displayVal;
@@ -24,8 +23,8 @@ numBtnArray.forEach(numBtn => {
   });
 });
 
-operationBtn.forEach(symbol => {
-  symbol.addEventListener("click", event => {
+operationBtn.forEach((symbol) => {
+  symbol.addEventListener("click", (event) => {
     if (operator === "" || firstVal === "") {
       operator = event.target.innerHTML;
       firstVal = displayVal;
@@ -92,7 +91,7 @@ function calc(operatorString) {
     display.innerHTML = firstVal;
     displayVal = "";
     operator = operatorString;
-  } else if (operator === "/") {
+  } else {
     firstVal = Number(firstVal) / Number(displayVal);
     display.innerHTML = firstVal;
     displayVal = "";
